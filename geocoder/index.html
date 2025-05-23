@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Geocode Score</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Geocode Score</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <hr class="d-sm-none" />
+      </div>
+      <div class="col-sm-8">
+        <div>
+          <div class="col">
+            <textarea id="result" rows="5" cols="8" style="width: 350px; height: 250px;">
+</textarea>
+          </div>
+
+          <div class="col"></div>
+          <div class="col-md-6 offset-5">
+            <p><b>OR</b></p>
+          </div>
+          <div class="col">
+            <div class="custom-file">
+              <input type="file" id="selectFiles" class="custom-file-input" />
+              <label class="custom-file-label" for="customFile">Choose file</label>
+              <a href="generated.json" download style="float: right;">(Download sample JSON file)</a>
+            </div>
+          </div>
+          <div class="col" style="margin-top: 10px;">
+            <button id="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+          <div class="col">
+            <textarea style="display: none;" id="result"></textarea>
+            <div id="myData" style="margin-top: 30px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Powered by HERE</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
