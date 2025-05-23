@@ -6,7 +6,7 @@ $(".custom-file-input").on("change", function () {
     .addClass("selected")
     .html(fileName);
 });
-window.apikey = `C0YJbMRl8qLYpGQ6QTSBoY_WNDZAKzAuoDpL8fNYdy0`; //replace your api key here
+window.apikey = ``; //api key 
 document.getElementById("submit").onclick = async function () {
   var textvalue = document.getElementById("result").value;
   var files = document.getElementById("selectFiles").files;
